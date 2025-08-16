@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(ojvst VERSION 0.0.1)
+project(ddestroy VERSION 0.0.1)
 add_subdirectory(JUCE)
 juce_add_plugin( ${PROJECT_NAME}
 	FORMATS VST3 STANDALONE)

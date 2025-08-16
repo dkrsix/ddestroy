@@ -106,6 +106,7 @@ void AudioPluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
 	for (int channel = 0; channel < totalNumInputChannels; ++channel) {
 		auto* channelData = buffer.getWritePointer (channel);
 		juce::ignoreUnused (channelData);
+		buffer.applyGain (10.0);
 	}
 }
 
